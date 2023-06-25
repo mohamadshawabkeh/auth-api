@@ -33,6 +33,9 @@ app.use('/api/v1', v1Routes);
 
 app.use(v2Routes);
 
+app.get('/', (req,res)=>{
+  res.send('Home Route');
+});
 
 
 // Catchalls
